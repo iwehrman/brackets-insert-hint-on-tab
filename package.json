@@ -1,0 +1,18 @@
+{
+	"name": "brackets-insert-hint-on-tab",
+	"title": "Brackets Insert Hint On Tab",
+	"version": "1.0.0",
+	"description": "Use the tab key to insert code hints in Brackets",
+	"homepage": "https://github.com/iwehrman/brackets-insert-hint-on-tab",
+	"author": "Ian Wehrman <ian@wehrman.org>",
+	"license": "MIT",
+	"categories":"editing",
+	"keywords": [
+        "javascript",
+		"html",
+		"css",
+	],
+	"engines": {
+		"brackets": ">=0.31.0"
+	}
+}
