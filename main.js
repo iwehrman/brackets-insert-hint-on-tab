@@ -28,10 +28,12 @@
 define(function (require, exports, module) {
     "use strict";
 
-    var CodeHintManager = brackets.getModule("editor/CodeHintManager"),
+    var PreferencesManager = brackets.getModule("preferences/PreferencesManager"),
         AppInit         = brackets.getModule("utils/AppInit");
 
     AppInit.appReady(function () {
-        CodeHintManager.setInsertHintOnTab(true);
+        var prefs = PreferencesManager.getPreference("insertHintOnTab");
+        PreferencesManager.set("insertHintOnTab", true);
+        PreferencesManager.save();
     });
 });
